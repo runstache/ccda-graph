@@ -1,2 +1,3 @@
-# ccda-graph
-Python Graph Structure for C-CDA
+# C-CDA Graph
+
+Python Classes to represent the C-CDA Entities in a Graph format.
