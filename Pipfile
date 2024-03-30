@@ -4,6 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+lxml = "*"
 
 [dev-packages]
 pytest = "*"
@@ -14,3 +15,5 @@ pyflakes = "*"
 pylint = "*"
 pycodestyle = "*"
 bandit = "*"
+networkx = "*"
+matplotlib = "*"

@@ -53,11 +53,11 @@ class NameNode(BaseNode):
 
     type_code: str
     family_name: str
-    give_name: str
+    given_name: str
     prefix: str
     suffix: str
-    valid_start_date: datetime
-    valid_end_date: datetime
+    valid_start_date: datetime | None
+    valid_end_date: datetime | None
 
 
 @dataclass(kw_only=True)
@@ -82,6 +82,7 @@ class EncounterNode(BaseNode):
     Node for Capturing Encounter information.
     """
 
+    status_code: str
     encounter_start: datetime
     encounter_end: datetime
 
@@ -93,3 +94,25 @@ class GeneralEntityNode(BaseNode):
     """
 
     class_code: str
+
+
+@dataclass(kw_only=True)
+class DiagnosisNode(BaseNode):
+    """
+    Denotes a Basic Diagnosis Node.
+    """
+
+    negation_indicator: bool
+    status_code: str
+    effective_start_datetime: datetime
+    effective_end_datetime: datetime
+
+
+@dataclass(kw_only=True)
+class ContactNode(BaseNode):
+    """
+    Denotes a Node for Capturing Contact Information
+    """
+
+    use: str
+    value: str
