@@ -1,0 +1,29 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="urn:hl7-org:v3 http://xreg2.nist.gov:8080/hitspValidation/schema/cdar2c32/infrastructure/cda/C32_CDA.xsd">
+
+    <effectiveTime>
+        <low value="20200513080137-0400"/>
+        <high value="20200513090137-0400"/>
+    </effectiveTime>
+    <id root="2.16.840.1.113883.19.5" extension="2fa15bc7-8866-461a-9000-f739e425860a"
+        assigningAuthorityName="https://github.com/synthetichealth/synthea"/>
+    <webId root="https://github.com/synthetichealth/synthea" extension="999999"
+           assigningAuthorityName="https://github.com/synthetichealth/synthea"/>
+
+    <code nullFlavor="UNK">
+        <originalText>Pediatrics</originalText>
+        <translation code="5" codeSystem="1.2.840.114350.1.72.1.7.7.10.688867.4160"
+                     codeSystemName="Epic.DXC.StandardProviderSpecialtyType"
+                     displayName="Anesthesiology"/>
+    </code>
+    <addr use="WP">
+        <streetAddressLine>123 Main St</streetAddressLine>
+        <streetAddressLine>STE 200</streetAddressLine>
+        <city>Anywhere</city>
+        <state>PA</state>
+        <postalCode>15123</postalCode>
+    </addr>
+    <telecom use="WP" value="tel:+1-555-555-5555"/>
+
+</ClinicalDocument>
